@@ -1,17 +1,73 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Matteo Bergamo</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>404 — Error</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="card">
+      <div class="hero float">
 
-        </header>
+        <svg viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Errore 404, pagina non trovata">
+          <defs>
 
-    </body>
+            <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#9be7ff" stop-opacity="0.12"/>
+              <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.06"/>
+            </linearGradient>
+
+
+            <filter id="grain">
+              <feTurbulence baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" result="noise" />
+              <feColorMatrix type="saturate" values="0"/>
+              <feBlend in="SourceGraphic" in2="noise" mode="overlay" result="out"/>
+            </filter>
+
+
+            <filter id="lightFilter" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="blur"/>
+              <feDiffuseLighting in="blur" lighting-color="#bfe9ff" surfaceScale="6" result="diff">
+                <fePointLight id="pLight" x="500" y="80" z="300"/>
+              </feDiffuseLighting>
+              <feSpecularLighting in="blur" lighting-color="#ffffff" surfaceScale="8" specularConstant="0.4" specularExponent="25" result="spec">
+                <fePointLight x="500" y="80" z="300"/>
+              </feSpecularLighting>
+              <feComposite in="diff" in2="SourceGraphic" operator="in" result="litDiff"/>
+              <feComposite in="spec" in2="SourceGraphic" operator="in" result="litSpec"/>
+              <feMerge>
+                <feMergeNode in="litDiff"/>
+                <feMergeNode in="litSpec"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+
+
+            <filter id="edgeBlur">
+              <feGaussianBlur stdDeviation="0.6"/>
+            </filter>
+          </defs>
+
+
+          <g transform="translate(0,0)">
+            <text x="50%" y="55%" text-anchor="middle" class="big shadow" style="filter:url(#edgeBlur);" transform="translate(18,18)">404</text>
+            <text x="50%" y="55%" text-anchor="middle" class="big shadow" style="filter:url(#edgeBlur);" transform="translate(12,12)">404</text>
+            <text x="50%" y="55%" text-anchor="middle" class="big shadow" style="filter:url(#edgeBlur);" transform="translate(6,6)">404</text>
+            <text id="frontText" x="50%" y="55%" text-anchor="middle" class="big front" style="filter:url(#lightFilter);">404</text>
+          </g>
+
+        </svg>
+
+      </div>
+
+      <p class="lead">Ops - Page not found</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
-
