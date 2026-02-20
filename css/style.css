@@ -1,5 +1,5 @@
 :root {
-    --Dusty-Olive: #6b7f62;
+    --Dusty-Olive: #4A5846;
     --Soft-Linen: #e8e1d6;
     --Deep-Mocha: #3b2f2f;
     --Porcelain: #faf9f6;
@@ -491,4 +491,5 @@ footer {
     .header-logo svg {
         height: 50px;
     }
+
 }
