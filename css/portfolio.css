@@ -1,0 +1,83 @@
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    color: var(--Dusty-Olive);
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+span {
+    display: block;
+    height: 0.5px;
+    width: 50%;
+    background-color: var(--Dusty-Olive);
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-auto-rows: calc(20vw / 0.7);
+    width: 90%;
+    gap: 10px 1vw;
+    justify-content: center;
+}
+
+.main-grid img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.main-bigimg {
+    position: fixed;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 120;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.main-bigimg img {
+    max-width: 90%;
+    height: auto;
+    width: auto;
+    max-height: 90%;
+}
+
+.main-bigimg-open {
+    display: flex;
+}
+
+
+@media (max-width: 510px)
+{
+    .main-grid {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-auto-rows: calc(20vw / 0.7);
+    width: 99%;
+    gap: 10px 1%;
+    justify-content: center;
+}
+}

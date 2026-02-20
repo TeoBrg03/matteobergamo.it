@@ -1,0 +1,352 @@
+body {
+    height: 200vh;
+}
+
+.main-cover {
+    width: 100%;
+    height: calc(100vh - 100px);
+
+    background: url(../images/Copertina.webp) no-repeat fixed center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    gap: 20px;
+}
+
+.main-cover-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main-cover h1 {
+    color: var(--Soft-Linen);
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+    z-index: 5;
+
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.main-cover h2 {
+    color: var(--Soft-Linen);
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    z-index: 5;
+
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+h3 {
+    color: var(--Dusty-Olive);
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    z-index: 5;
+
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.main-im {
+    width: 100%;
+    background-color: var(--Porcelain);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 70px 0px 70px 0px;
+}
+
+.main-im-content {
+    width: 50%;
+    text-align: center;
+    color: var(--Deep-Mocha);
+    font-size: 17px;
+}
+
+.main-im span {
+    display: block;
+    height: 0.5px;
+    width: 50%;
+    background-color: var(--Dusty-Olive);
+}
+
+
+.main-works {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.main-works-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-works-list div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-works-list div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15vw;
+    height: 70vh;
+
+    transition: 0.2s;
+
+    color: var(--Porcelain);
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.15);
+
+    color: var(--Porcelain);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.main-works-list div a:hover {
+    width: 30vw;
+}
+
+#main-works-list-motocross {
+    background-image: url(../images/Motocross.webp);
+}
+
+#main-works-list-equitazione {
+    background-image: url(../images/Equitazione.webp);
+}
+
+#main-works-list-ritratti {
+    background-image: url(../images/Ritratti.webp);
+}
+
+#main-works-list-altro {
+    background-image: url(../images/Altro.webp);
+}
+
+
+.main-blog {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
+    gap: 20px;
+}
+
+.main-blog-grid {
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.main-blog-grid-card {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.main-blog-grid-card-img {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-blog-grid-card h4 {
+    font-size: 15px;
+    color: var(--Dusty-Olive);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.main-blog-grid-card a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.main-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.main-form form{
+    min-width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    box-shadow: rgb(209, 209, 209) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 20px;
+}
+
+.main-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.main-form-group label{
+    text-transform: uppercase;
+}
+
+@media (max-width: 920px)
+{
+    .main-works-list div a{
+        width: 20vw;
+        height: 70vh;
+    }
+
+    .main-works-list div a:hover {
+        width: 30vw;
+    }
+
+    .main-blog-grid {
+        width: 90%;
+        gap: 10px;
+        height: auto;
+    }
+
+    .main-blog-grid-card {
+        height: 60vh;
+    }
+
+    .main-form form {
+        width: 90%;
+    }
+
+    .main-form-group{
+        min-width: 60%;
+    }
+
+    .main-form-group input, .main-form-group textarea{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 750px) and (min-width: 510px)
+{
+    .main-cover h1 {
+        font-size: 50px;
+    }
+
+    .main-cover h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 510px)
+{
+    .main-cover h1 {
+        font-size: 30px;
+    }
+
+    .main-cover h2 {
+        font-size: 20px;
+    }
+
+    .main-im-content {
+        width: 80%;
+    }
+
+    .main-im span {
+        width: 80%;
+    }
+
+    .main-works-list {
+        flex-wrap: wrap;
+    }
+
+    .main-works-list div a{
+        width: 45vw;
+        height: 30vh;
+    }
+
+    .main-works-list div a:hover{
+        width: 45vw;
+    }
+
+    .main-blog {
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .main-blog-grid {
+        flex-direction: column;
+    }
+
+    .main-blog-grid-card {
+        height: 35vh;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
