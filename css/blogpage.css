@@ -50,3 +50,16 @@
     color: var(--Deep-Mocha);
     text-align: center;
 }
+
+@media (max-width: 510px)
+{
+    .main-content{
+        padding: 20px;
+    }
+
+    .main-cover h2{
+        font-size: 30px;
+        max-width: 100%;
+    }
+
+}
