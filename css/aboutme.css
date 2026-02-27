@@ -28,3 +28,16 @@
     width: 55%;
     background-color: var(--Dusty-Olive);
 }
+
+@media (max-width: 510px)
+{
+    .main-content p {
+        width: 95%;
+    }
+
+    
+    .main-content span {
+        width: 97%;
+    }
+
+}
